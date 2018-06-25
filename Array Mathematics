@@ -1,0 +1,19 @@
+# Subtraction
+g = a - b
+
+np.subtract(a,b)
+
+# Addition
+b + a
+
+np.add(b,a)
+
+# Division
+b/a
+
+np.divide(a,b)
+
+# Multiplication
+np.multiply(a,b)
+
+#Exponentiation
