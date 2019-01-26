@@ -1,0 +1,81 @@
+
+
+#Import numpy package as np so you can use it easily
+>>> import numpy as np
+
+>>> a = np.arange(15).reshape(3,5)
+>>> a
+array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14]])
+
+
+
+>>> a.shape
+(3, 5)
+>>> a.ndim
+2
+>>> a.dtype.name
+'int64'
+>>> a.itemsize
+8
+>>> a.size
+15
+>>> type(a)
+<class 'numpy.ndarray'>
+>>> b = np.array([6,7,8])
+>>> b
+array([6, 7, 8])
+>>> type(b)
+<class 'numpy.ndarray'>
+
+
+>>> a = np.array([1,2,3])
+>>> a
+array([1, 2, 3])
+>>> a.dtype
+dtype('int64')
+>>> b =np.array([0.1,0.2,0.3])
+>>> b
+array([0.1, 0.2, 0.3])
+>>> b.dtype
+dtype('float64')
+
+
+>>> a = np.array([1,2,3])
+>>> a
+array([1, 2, 3])
+>>> a.dtype
+dtype('int64')
+>>> b =np.array([0.1,0.2,0.3])
+>>> b
+array([0.1, 0.2, 0.3])
+>>> b.dtype
+dtype('float64')
+>>> c = np.array([(0.5,1,2),(1,2,3)])
+>>> c
+array([[0.5, 1. , 2. ],
+       [1. , 2. , 3. ]])
+>>> d = np.array([[1,2],[2,1]], dtype=complex)
+>>> d
+array([[1.+0.j, 2.+0.j],
+       [2.+0.j, 1.+0.j]])
+>>> e = np.zeros((1,2))
+>>> e
+array([[0., 0.]])
+>>> f = np.ones((1,2,3), dtype=np.int16)
+>>> f
+array([[[1, 1, 1],
+        [1, 1, 1]]], dtype=int16)
+
+
+
+
+#Reverse an array using numpy
+import numpy
+
+def arrays(arr):
+    # complete this function
+    # use numpy.array
+    return(numpy.array(arr[::-1], float))
+arr = input().strip().split(' ')
